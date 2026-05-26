@@ -50,13 +50,13 @@ const Page = () => {
                         </div>
 
                         {/*    button*/}
-                        <button className="w-[360px] h-[44px] cursor-pointer bg-[#0088FF] text-white rounded-md hover:bg-[#026ecc]">
+                        <button className="w-[360px] h-[44px] cursor-pointer bg-bank-gradient text-white rounded-md hover:bg-[#026ecc]">
                             Login
                         </button>
 
                         {/*  Options  */}
                         <div className="mt-8 flex items-center justify-center">
-                            <p className="text-gray-500">Don't have an account? <Link href={"/"} className="text-blue-400 font-semibold">Sign Up</Link></p>
+                            <p className="text-gray-500">Don't have an account? <Link href={"/"} className="text-blue-600 font-semibold">Sign Up</Link></p>
                         </div>
                     </div>
                 </div>

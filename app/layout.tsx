@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Geist } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 
 // Configure Poppins font
 const poppins = Poppins({
@@ -32,7 +36,7 @@ export default function RootLayout({
   return (
       <html
           lang="en"
-          className={`${poppins.variable} h-full antialiased`}
+          className={cn("h-full", "antialiased", poppins.variable, "font-sans", geist.variable)}
       >
       <body className="min-h-full font-sans flex flex-col">
       {children}
