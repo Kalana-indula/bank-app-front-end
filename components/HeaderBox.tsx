@@ -3,8 +3,8 @@ import {HeaderProps} from "@/types";
 
 const HeaderBox = ({type,title,subtext,user}:HeaderProps) => {
     return (
-        <div className="header-box">
-            <h1 className="header-box-title">
+        <div className="header-box flex flex-col">
+            <h1 className="header-box-title text-[30px] font-semibold">
                 {title}
                 {type === 'greeting' && (
                     <span className="text-bank-gradient">
@@ -12,7 +12,7 @@ const HeaderBox = ({type,title,subtext,user}:HeaderProps) => {
                     </span>
                 )}
             </h1>
-            <p className="header-box-subtext">{subtext}</p>
+            <p className="header-box-subtext text-[16px] text-gray-500">{subtext}</p>
         </div>
     )
 }
